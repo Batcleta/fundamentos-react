@@ -1,0 +1,27 @@
+table{
+    width: 100%;
+}
+
+table > thead{
+    background-color: rgb(116, 116, 108);
+    color: blanchedalmond;
+}
+
+table > thead > tr > th{
+    font-weight: 500;
+}
+
+table > tbody{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+table > tbody > tr > td{
+  padding: 5px;
+  font-size: 16px;
+}
+
+.par{
+    background-color: #ddd;
+}
+
