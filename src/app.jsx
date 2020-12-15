@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Usuario from './componentes/condicional/Usuario'
 import ParOuImpar from './componentes/condicional/ParOuImpar'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos'
 import ListaAlunos from './componentes/repeticao/ListaAlunos'
@@ -20,24 +21,29 @@ export default _ =>
     <div id="App">
         <h1>Fundamentos do React</h1>
 
-        
-        
+
+
         <div className="Cards">
 
             <Card titulo="#8 - Renderização condiional" color="#982395">
-                
+
                 <ParOuImpar numero={19}></ParOuImpar>
+                <Usuario usuario={{ nome: 'Washington' }} />
+                <Usuario usuario={{ nome: '' }} />
+                <Usuario usuario={{ email: 'washington@ferreira.com' }} />
+                <Usuario usuario={{}} />
+                <Usuario />
 
             </Card>
 
             <Card titulo="#7 - Desafio repetição em tabelas" color="#3a9ad9">
-                
+
                 <TabelaProdutos></TabelaProdutos>
 
             </Card>
 
             <Card titulo="#6 - repetição" color="#ff4c65">
-                
+
                 <ListaAlunos></ListaAlunos>
 
             </Card>
@@ -47,9 +53,9 @@ export default _ =>
                     <FamiliaMembro nome="washington" />
                     <FamiliaMembro nome="Caroline" />
                     <FamiliaMembro nome="Elza" />
-                    
 
-                    </Familia>
+
+                </Familia>
             </Card>
 
             <Card titulo="#4 - Desafio Aleatório" color="#080">
