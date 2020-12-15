@@ -1,5 +1,8 @@
 import React from 'react'
 
+
+import TabelaProdutos from './componentes/repeticao/TabelaProdutos'
+import ListaAlunos from './componentes/repeticao/ListaAlunos'
 import Familia from './componentes/basicos/familia'
 import FamiliaMembro from './componentes/basicos/membro'
 import Card from './componentes/layout/card'
@@ -19,15 +22,27 @@ export default _ =>
 
         <div className="Cards">
 
-            <   Card titulo="#5 - Componente com filhos" color="#cc6600">
+        <       Card titulo="#7 - Desafio repetição em tabelas" color="#685742">
+                    
+                    <TabelaProdutos></TabelaProdutos>
+
+                </Card>
+
+        <       Card titulo="#6 - repetição" color="#cc6600">
+                    
+                    <ListaAlunos></ListaAlunos>
+
+                </Card>
+
+            <   Card titulo="#5 - Componente com filhos" color="#600">
                 <Familia sobrenome="Ferreira" idademedia="30 anos" >
                     <FamiliaMembro nome="washington" />
                     <FamiliaMembro nome="Caroline" />
                     <FamiliaMembro nome="Elza" />
                     
 
-                </Familia>
-            </Card>
+                    </Familia>
+                </Card>
 
             <Card titulo="#4 - Desafio Aleatório" color="#080">
                 <Aleatorio min="5" max="20"></Aleatorio>
