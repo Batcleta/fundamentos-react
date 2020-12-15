@@ -4,7 +4,7 @@ import Numeros from '../../data/numeração'
 
 export default props => {
 
-    const contPar = Numeros.map((num, i) => {
+    const contParImpar = Numeros.map((num, i) => {
         return (
             <div key={i}> {num % 2 === 0 ? <div>Par</div> : <div>imPar</div>} </div>
         )
@@ -12,8 +12,7 @@ export default props => {
 
     return (
         <div>
-            {contPar}
-
+            {contParImpar}
         </div>
     )
 }
