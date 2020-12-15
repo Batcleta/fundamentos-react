@@ -1,11 +1,19 @@
 import React from 'react'
 
-export default props =>{
+import Numeros from '../../data/numeração'
 
-    return(
+export default props => {
+
+    const contPar = Numeros.map((num, i) => {
+        return (
+            <div key={i}> {num % 2 === 0 ? <div>Par</div> : <div>imPar</div>} </div>
+        )
+    })
+
+    return (
         <div>
-            <span>Par</span>
-            <span>Impar</span>
+            {contPar}
+
         </div>
     )
 }

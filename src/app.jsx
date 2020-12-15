@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+import ParOuImpar from './componentes/condicional/ParOuImpar'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos'
 import ListaAlunos from './componentes/repeticao/ListaAlunos'
 import Familia from './componentes/basicos/familia'
@@ -20,21 +20,29 @@ export default _ =>
     <div id="App">
         <h1>Fundamentos do React</h1>
 
+        
+        
         <div className="Cards">
 
-        <       Card titulo="#7 - Desafio repetição em tabelas" color="#685742">
-                    
-                    <TabelaProdutos></TabelaProdutos>
+            <Card titulo="#8 - Renderização condiional" color="#982395">
+                
+                <ParOuImpar numero={19}></ParOuImpar>
 
-                </Card>
+            </Card>
 
-        <       Card titulo="#6 - repetição" color="#cc6600">
-                    
-                    <ListaAlunos></ListaAlunos>
+            <Card titulo="#7 - Desafio repetição em tabelas" color="#3a9ad9">
+                
+                <TabelaProdutos></TabelaProdutos>
 
-                </Card>
+            </Card>
 
-            <   Card titulo="#5 - Componente com filhos" color="#600">
+            <Card titulo="#6 - repetição" color="#ff4c65">
+                
+                <ListaAlunos></ListaAlunos>
+
+            </Card>
+
+            <Card titulo="#5 - Componente com filhos" color="#600">
                 <Familia sobrenome="Ferreira" idademedia="30 anos" >
                     <FamiliaMembro nome="washington" />
                     <FamiliaMembro nome="Caroline" />
@@ -42,7 +50,7 @@ export default _ =>
                     
 
                     </Familia>
-                </Card>
+            </Card>
 
             <Card titulo="#4 - Desafio Aleatório" color="#080">
                 <Aleatorio min="5" max="20"></Aleatorio>
