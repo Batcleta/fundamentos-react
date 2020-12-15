@@ -1,5 +1,7 @@
 import React from 'react'
 
+import IndiretaPai from './componentes/comunicacao/IndiretoPai'
+import DiretaPai from './componentes/comunicacao/DiretaPai'
 import Usuario from './componentes/condicional/Usuario'
 import ParOuImpar from './componentes/condicional/ParOuImpar'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos'
@@ -24,6 +26,19 @@ export default _ =>
 
 
         <div className="Cards">
+
+
+            <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+
+                <IndiretaPai></IndiretaPai>
+
+            </Card>
+
+            <Card titulo="#9 - Comunicação Direta" color="#59323c">
+
+                <DiretaPai></DiretaPai>
+
+            </Card>
 
             <Card titulo="#8 - Renderização condiional" color="#982395">
 
