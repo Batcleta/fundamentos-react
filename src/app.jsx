@@ -6,6 +6,8 @@ import React from 'react'
 import ContadorFunc from './componentes/contador/contadorfunc'
 
 /*Aulas Principais*/
+
+import Megasena from './componentes/megasena/mega'
 import Contador from './componentes/contador/contador'
 import Input from './componentes/formulario/input'
 import IndiretaPai from './componentes/comunicacao/IndiretoPai'
@@ -36,6 +38,11 @@ export default _ =>
         <div className="Cards">
 
 
+            <Card titulo="#13 - Megasena " color="#455f4e2">
+
+                <Megasena qtd={6} />
+
+            </Card>
             <Card titulo="#12,5 - ContadorFunc " color="#424242">
 
                 <ContadorFunc valorInicial={10} />
