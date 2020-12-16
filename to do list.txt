@@ -1,0 +1,16 @@
+Pesquisas:
+
+
+Como o this funciona em uma arrow function e como o this funciona em geral
+
+cloneElement
+
+Map()
+reduce()
+filter()
+
+Maiores diferenças entre classe e fução dentro do react
+
+Rever: constructor, spreadind, destructor
+
+

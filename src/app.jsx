@@ -1,5 +1,12 @@
 import React from 'react'
 
+/*Treinamento Bonus*/
+
+/* Criar um contador utilizando uma função */
+import ContadorFunc from './componentes/contador/contadorfunc'
+
+/*Aulas Principais*/
+import Contador from './componentes/contador/contador'
 import Input from './componentes/formulario/input'
 import IndiretaPai from './componentes/comunicacao/IndiretoPai'
 import DiretaPai from './componentes/comunicacao/DiretaPai'
@@ -28,6 +35,18 @@ export default _ =>
 
         <div className="Cards">
 
+
+            <Card titulo="#12,5 - ContadorFunc " color="#424242">
+
+                <ContadorFunc valorInicial={10} />
+
+            </Card>
+
+            <Card titulo="#12 - Contador " color="#424242">
+
+                <Contador valorInicial={10} />
+
+            </Card>
 
             <Card titulo="#11 - Compunente controlado (input) " color="#e45f56">
 

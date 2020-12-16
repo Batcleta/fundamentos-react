@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default props => {
 
-    const [valor, setValor] = useState('valor pau no seu cu')
+    const [valor, setValor] = useState('valor teste')
     const [textarea, setTextarea] = useState('teste')
 
     function quandoMudarInput(e) {
